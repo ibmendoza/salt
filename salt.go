@@ -23,6 +23,14 @@ func ExpiresInHours(d time.Duration) int64 {
 	return time.Now().Add(time.Hour * d).Unix()
 }
 
+func ExpiresInDays(d time.Duration) int64 {
+	return time.Now().Add(24 * time.Hour * d).Unix()
+}
+
+func ExpiresInMonths(d time.Duration) int64 {
+	return time.Now().Add(30 * 24 * time.Hour * d).Unix()
+}
+
 //returns the corresponding claims as map[string]interface{} if token is valid
 func Verify(token, naclKey string) (map[string]interface{}, error) {
 
