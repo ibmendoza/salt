@@ -1,7 +1,13 @@
 A simple NaCl library to generate an encrypted token with claims like that of JWT. NaCl already provides 
 encrypt-then-MAC capability so you don't need HMAC to sign the token
 
-Claims: set exp using the convenience function ExpiresInSeconds, ExpiresInMinutes or ExpiresInHours
+Claims: set exp using the following convenience functions:
+
+- ExpiresInSeconds
+- ExpiresInMinutes
+- ExpiresInHours
+- ExpiresInDays
+- ExpiresInMonths
 
 Generate NaCl key: call GenerateKey()
 
