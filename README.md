@@ -1,5 +1,5 @@
 A simple NaCl library to generate an encrypted token with claims like that of JWT. NaCl already provides 
-encrypt-then-MAC capability so you don't need HMAC to sign the token
+[encrypt-then-MAC](https://www.daemonology.net/blog/2009-06-24-encrypt-then-mac.html) capability so you don't need HMAC to sign the token
 
 Claims: set exp using the following convenience functions:
 
